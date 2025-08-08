@@ -42,8 +42,8 @@
 <body>
 
   <header>
-    <img src="![logo png](https://github.com/user-attachments/assets/67be9cbb-22cc-44a4-8dc7-6a9bd25f5e5e)
- " alt![Uploading logo.png.jpeg…]()
+    <img src="![(https://github.com/user-attachments/assets/6d17217f-aa0b-474c-b8a1-0324e2efc3dc)
+] " alt![Uploading logo.png.jpeg…]()
 ="Logo da Empresa">
     <nav>
       <a href="#home">Início</a>
