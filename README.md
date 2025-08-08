@@ -42,7 +42,7 @@
 <body>
 
   <header>
-    <img src="logo-mastercorp.png" alt="Logo Mastercorp">
+    <img src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/072022/mastercorp.png" alt="Logo Mastercorp">
     <nav>
       <a href="#inicio">Início</a>
       <a href="#documentos">Documentos</a>
