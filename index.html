@@ -1,67 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Documentos SGQ</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .tabs { display: flex; cursor: pointer; margin-bottom: 10px; }
-    .tab { padding: 10px 20px; background: #eee; border: 1px solid #ccc; margin-right: 5px; }
-    .tab.active { background: #ddd; font-weight: bold; }
-    .content { display: none; }
-    .content.active { display: block; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin-bottom: 8px; }
-  </style>
-</head>
-<body>
-  <h1>📚 Documentos do Sistema de Gestão da Qualidade</h1>
-
-  <div class="tabs">
-    <div class="tab active" onclick="showTab('procedimentos')">📘 Procedimentos</div>
-    <div class="tab" onclick="showTab('manual')">📗 Manual da Qualidade</div>
-    <div class="tab" onclick="showTab('instrucoes')">📙 Instruções de Trabalho</div>
-    <div class="tab" onclick="showTab('organograma')">📊 Organograma</div>
-  </div>
-
-  <div id="procedimentos" class="content active">
-    <ul>
-      <li><a href="POP-06%20Controle%20de%20documentos%20e%20registros%20Rev.05.pdf" target="_blank">POP-06 Controle de documentos e registros</a></li>
-      <li><a href="POP-03%20Controle%20de%20Qualidade%20Revis%C3%A3o%2004.pdf" target="_blank">POP-03 Controle de Qualidade</a></li>
-      <li><a href="POP-04%20Reclama%C3%A7%C3%A3o%20de%20clientes%20e%20devolu%C3%A7%C3%A3o%20de%20produtos%20Rev.06.pdf" target="_blank">POP-04 Reclamação de clientes</a></li>
-      <li><a href="POP-05%20Controle%20de%20pragas%20Rev.03.pdf" target="_blank">POP-05 Controle de pragas</a></li>
-      <li><a href="POP-07%20Controle%20de%20temperatura%20Rev.03.pdf" target="_blank">POP-07 Controle de temperatura</a></li>
-      <!-- Adicione os demais POPs aqui -->
-    </ul>
-  </div>
-
-  <div id="manual" class="content">
-    <ul>
-      <li><a href="SGQ-MQ-001%20Manual%20da%20Qualidade.pdf" target="_blank">SGQ-MQ-001 Manual da Qualidade</a></li>
-    </ul>
-  </div>
-
-  <div id="instrucoes" class="content">
-    <ul>
-      <li><a href="PL%2001%20-%20APPCC%20-An%C3%A1lise%20de%20Perigos%20e%20Pontos%20Cr%C3%ADticos%20de%20Controle%20Rev.%2002.pdf" target="_blank">PL 01 - APPCC - Análise de Perigos</a></li>
-      <li><a href="POP-26%20Laudo%20de%20Migra%C3%A7%C3%A3o%20Rev.%2000.pdf" target="_blank">POP-26 Laudo de Migração</a></li>
-      <!-- Adicione outras instruções de trabalho aqui -->
-    </ul>
-  </div>
-
-  <div id="organograma" class="content">
-    <ul>
-      <li><a href="FLUXOGRAMA%20DO%20PROCESSO.pdf" target="_blank">Fluxograma do Processo</a></li>
-    </ul>
-  </div>
-
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
-</body>
-</html>
+<div id="procedimentos" class="content active">
+  <ul>
+    <li><a href="POP-01%20Recebimento%20de%20mat%C3%A9rias%20primas%20e%20insumos%20e%20armazenamento%20rev.04.pdf" target="_blank">POP-01 Recebimento de matérias primas e insumos</a></li>
+    <li><a href="POP-03%20Controle%20de%20Qualidade%20Revis%C3%A3o%2004.pdf" target="_blank">POP-03 Controle de Qualidade</a></li>
+    <li><a href="POP-04%20Reclama%C3%A7%C3%A3o%20de%20clientes%20e%20devolu%C3%A7%C3%A3o%20de%20produtos%20Rev.06.pdf" target="_blank">POP-04 Reclamação de clientes</a></li>
+    <li><a href="POP-05%20Controle%20de%20pragas%20e%20potabilidade%20da%20%C3%A1gua%20Rev.05.pdf" target="_blank">POP-05 Controle de pragas e potabilidade da água</a></li>
+    <li><a href="POP-06%20Controle%20de%20documentos%20e%20registros%20Rev.05.pdf" target="_blank">POP-06 Controle de documentos e registros</a></li>
+    <li><a href="POP-07%20Manuten%C3%A7%C3%A3o%20corretiva%20e%20preventiva%20rev.07.pdf" target="_blank">POP-07 Manutenção corretiva e preventiva</a></li>
+    <li><a href="POP-08%20Procedimento%20de%20limpeza%20de%20m%C3%A1quinas%20Revis%C3%A3o%2004.pdf" target="_blank">POP-08 Limpeza de máquinas</a></li>
+    <li><a href="POP-09%20Controle%20de%20produto%20n%C3%A3o%20conforme%20rev.03.pdf" target="_blank">POP-09 Produto não conforme</a></li>
+    <li><a href="POP-10%20Sele%C3%A7%C3%A3o%20e%20qualifica%C3%A7%C3%A3o%20de%20Fornecedores%20rev.%2001.pdf" target="_blank">POP-10 Seleção de Fornecedores</a></li>
+    <li><a href="POP-11%20Higieniza%C3%A7%C3%A3o%20das%20instala%C3%A7%C3%B5es%2C%20m%C3%B3veis%20e%20utens%C3%ADlios.%20revis%C3%A3o%2003.pdf" target="_blank">POP-11 Higienização das instalações</a></li>
+    <li><a href="POP-12%20Higiene%20e%20Sa%C3%BAde%20dos%20Colaboradores%20rev.01.pdf" target="_blank">POP-12 Higiene e Saúde dos Colaboradores</a></li>
+    <li><a href="POP-13%20Rastreabilidade%20e%20recolhimento%20de%20produtos%20rev.01.pdf" target="_blank">POP-13 Rastreabilidade e Recolhimento</a></li>
+    <li><a href="POP-14%20Gest%C3%A3o%20de%20incidentes%20rev.01.pdf" target="_blank">POP-14 Gestão de Incidentes</a></li>
+    <li><a href="POP-15%20Manuten%C3%A7%C3%A3o%20e%20Calibra%C3%A7%C3%A3o%20de%20Equipamentos%20de%20Medi%C3%A7%C3%A3o%20Revis%C3%A3o%2001.pdf" target="_blank">POP-15 Calibração de Equipamentos</a></li>
+    <li><a href="POP-16%20Gest%C3%A3o%20de%20materiais%20estranhos%20rev.01.pdf" target="_blank">POP-16 Materiais Estranhos</a></li>
+    <li><a href="POP-17%20Gest%C3%A3o%20de%20Res%C3%ADduos%20Rev.00.pdf" target="_blank">POP-17 Gestão de Resíduos</a></li>
+    <li><a href="POP-18%20Controle%20de
