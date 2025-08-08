@@ -1,131 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Documentos SGQ</title>
-  <style>
-    body { font-family: Arial; margin: 40px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background-color: #f2f2f2; }
-  </style>
-</head>
-<body>
-  <img src="Captura de tela_8-8-2025_10422_intranet" alt="Logo da Empresa" style="width:150px;">
-  <h1>📚 Lista Mestre de Documentos - SGQ</h1>
-  <table>
-    <tr>
-      <th>ID</th><th>Título</th><th>Tipo</th><th>Versão</th><th>Data</th><th>Status</th><th>Link</th>
-    </tr>
-    <tr>
-      <td>SGQ-MQ-001</td><td>Manual da Qualidade</td><td>Manual</td><td>3.0</td><td>01/07/2025</td><td>Ativo</td>
-      <td><a href="https://drive.google.com/..." target="_blank">Ver Documento</a></td>
-    </tr>
-    <!-- Adicione mais linhas conforme necessário -->
-  </table>
-</body>
-</html>
-<tr>
-  <td>SGQ-MQ-001</td>
-    <td>Procedimento</td>
-  <td>1.2</td>
-  <td>05/08/2025</td>
-  <td>Ativo</td>
-  <td><a href="documentos/SGQ-MQ-002.pdf" target="_blank">Ver Documento</a></td>
-</tr>
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Título</th>
-      <th>Versão</th>
-      <th>Data</th>
-      <th>Status</th>
-      <th>Documento</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>POP-06</td>
-      <td>Controle de documentos e registros</td>
-      <td>Rev.05</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="POP-06%20Controle%20de%20documentos%20e%20registros%20Rev.05.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-    <tr>
-      <td>PL-01</td>
-      <td>APPCC - Análise de Perigos e Pontos Críticos de Controle</td>
-      <td>Rev.02</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="PL%2001%20-%20APPCC%20-An%C3%A1lise%20de%20Perigos%20e%20Pontos%20Cr%C3%ADticos%20de%20Controle%20Rev.%2002.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-    <tr>
-      <td>POP-26</td>
-      <td>Laudo de Migração</td>
-      <td>Rev.00</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="POP-26%20Laudo%20de%20Migra%C3%A7%C3%A3o%20Rev.%2000.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-    <tr>
-      <td>POP-01</td>
-      <td>Recebimento de matérias primas e insumos e armazenamento</td>
-      <td>Rev.04</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="POP-01%20Recebimento%20de%20mat%C3%A9rias%20primas%20e%20insumos%20e%20armazenamento%20rev.04.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-    <tr>
-      <td>POP-03</td>
-      <td>Controle de Qualidade</td>
-      <td>Rev.04</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="POP-03%20Controle%20de%20Qualidade%20Revis%C3%A3o%2004.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-    <tr>
-      <td>POP-04</td>
-      <td>Reclamação de clientes e devolução de produtos</td>
-      <td>Rev.06</td>
-      <td>08/08/2025</td>
-      <td>Ativo</td>
-      <td><a href="POP-04%20Reclama%C3%A7%C3%A3o%20de%20clientes%20e%20devolu%C3%A7%C3%A3o%20de%20produtos%20Rev.06.pdf" target="_blank">Ver PDF</a></td>
-    </tr>
-  </tbody>
-</table>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Documentos SGQ</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .tabs { display: flex; cursor: pointer; margin-bottom: 10px; }
+    .tab { padding: 10px 20px; background: #eee; border: 1px solid #ccc; margin-right: 5px; }
+    .tab.active { background: #ddd; font-weight: bold; }
+    .content { display: none; }
+    .content.active { display: block; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+  </style>
 </head>
 <body>
-  <h1>📚 Lista de Documentos SGQ</h1>
-  <ul>
-    <li><a href="POP-06%20Controle%20de%20documentos%20e%20registros%20Rev.05.pdf" target="_blank">POP-06 Controle de documentos e registros</a></li>
-    <li><a href="PL%2001%20-%20APPCC%20-An%C3%A1lise%20de%20Perigos%20e%20Pontos%20Cr%C3%ADticos%20de%20Controle%20Rev.%2002.pdf" target="_blank">PL 01 - APPCC - Análise de Perigos</a></li>
-    <li><a href="POP-26%20Laudo%20de%20Migra%C3%A7%C3%A3o%20Rev.%2000.pdf" target="_blank">POP-26 Laudo de Migração</a></li>
-    <li><a href="POP-01%20Recebimento%20de%20mat%C3%A9rias%20primas%20e%20insumos%20e%20armazenamento%20rev.04.pdf" target="_blank">POP-01 Recebimento de matérias primas</a></li>
-    <li><a href="POP-03%20Controle%20de%20Qualidade%20Revis%C3%A3o%2004.pdf" target="_blank">POP-03 Controle de Qualidade</a></li>
-    <li><a href="POP-04%20Reclama%C3%A7%C3%A3o%20de%20clientes%20e%20devolu%C3%A7%C3%A3o%20de%20produtos%20Rev.06.pdf" target="_blank">POP-04 Reclamação de clientes</a></li>
-    <li><a href="POP-05%20Controle%20de%20pragas%20Rev.03.pdf" target="_blank">POP-05 Controle de pragas</a></li>
-    <li><a href="POP-07%20Controle%20de%20temperatura%20Rev.03.pdf" target="_blank">POP-07 Controle de temperatura</a></li>
-    <li><a href="POP-08%20Controle%20de%20higiene%20Rev.03.pdf" target="_blank">POP-08 Controle de higiene</a></li>
-    <li><a href="POP-09%20Controle%20de%20manuten%C3%A7%C3%A3o%20Rev.03.pdf" target="_blank">POP-09 Controle de manutenção</a></li>
-    <li><a href="POP-10%20Controle%20de%20fornecedores%20Rev.03.pdf" target="_blank">POP-10 Controle de fornecedores</a></li>
-    <li><a href="POP-11%20Controle%20de%20produtos%20acabados%20Rev.03.pdf" target="_blank">POP-11 Controle de produtos acabados</a></li>
-    <li><a href="POP-12%20Controle%20de%20não%20conformidades%20Rev.03.pdf" target="_blank">POP-12 Controle de não conformidades</a></li>
-    <li><a href="POP-13%20Controle%20de%20treinamentos%20Rev.03.pdf" target="_blank">POP-13 Controle de treinamentos</a></li>
-    <li><a href="POP-14%20Controle%20de%20auditorias%20Rev.03.pdf" target="_blank">POP-14 Controle de auditorias</a></li>
-    <li><a href="POP-15%20Controle%20de%20indicadores%20Rev.03.pdf" target="_blank">POP-15 Controle de indicadores</a></li>
-    <li><a href="POP-16%20Controle%20de%20ações%20corretivas%20Rev.03.pdf" target="_blank">POP-16 Controle de ações corretivas</a></li>
-    <li><a href="POP-17%20Controle%20de%20ações%20preventivas%20Rev.03.pdf" target="_blank">POP-17 Controle de ações preventivas</a></li>
-    <li><a href="POP-18%20Controle%20de%20melhoria%20Rev.03.pdf" target="_blank">POP-18 Controle de melhoria</a></li>
-    <li><a href="POP-19%20Controle%20de%20requisitos%20legais%20Rev.03.pdf" target="_blank">POP-19 Controle de requisitos legais</a></li>
-    <li><a href="POP-20%20Controle%20de%20comunica%C3%A7%C3%A3o%20Rev.03.pdf" target="_blank">POP-20 Controle de comunicação</a></li>
-    <li><a href="POP-21%20Controle%20de%20documentos%20externos%20Rev.03.pdf" target="_blank">POP-21 Controle de documentos externos</a></li>
-  </ul>
+  <h1>📚 Documentos do Sistema de Gestão da Qualidade</h1>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('procedimentos')">📘 Procedimentos</div>
+    <div class="tab" onclick="showTab('manual')">📗 Manual da Qualidade</div>
+    <div class="tab" onclick="showTab('instrucoes')">📙 Instruções de Trabalho</div>
+    <div class="tab" onclick="showTab('organograma')">📊 Organograma</div>
+  </div>
+
+  <div id="procedimentos" class="content active">
+    <ul>
+      <li><a href="POP-06%20Controle%20de%20documentos%20e%20registros%20Rev.05.pdf" target="_blank">POP-06 Controle de documentos e registros</a></li>
+      <li><a href="POP-03%20Controle%20de%20Qualidade%20Revis%C3%A3o%2004.pdf" target="_blank">POP-03 Controle de Qualidade</a></li>
+      <li><a href="POP-04%20Reclama%C3%A7%C3%A3o%20de%20clientes%20e%20devolu%C3%A7%C3%A3o%20de%20produtos%20Rev.06.pdf" target="_blank">POP-04 Reclamação de clientes</a></li>
+      <li><a href="POP-05%20Controle%20de%20pragas%20Rev.03.pdf" target="_blank">POP-05 Controle de pragas</a></li>
+      <li><a href="POP-07%20Controle%20de%20temperatura%20Rev.03.pdf" target="_blank">POP-07 Controle de temperatura</a></li>
+      <!-- Adicione os demais POPs aqui -->
+    </ul>
+  </div>
+
+  <div id="manual" class="content">
+    <ul>
+      <li><a href="SGQ-MQ-001%20Manual%20da%20Qualidade.pdf" target="_blank">SGQ-MQ-001 Manual da Qualidade</a></li>
+    </ul>
+  </div>
+
+  <div id="instrucoes" class="content">
+    <ul>
+      <li><a href="PL%2001%20-%20APPCC%20-An%C3%A1lise%20de%20Perigos%20e%20Pontos%20Cr%C3%ADticos%20de%20Controle%20Rev.%2002.pdf" target="_blank">PL 01 - APPCC - Análise de Perigos</a></li>
+      <li><a href="POP-26%20Laudo%20de%20Migra%C3%A7%C3%A3o%20Rev.%2000.pdf" target="_blank">POP-26 Laudo de Migração</a></li>
+      <!-- Adicione outras instruções de trabalho aqui -->
+    </ul>
+  </div>
+
+  <div id="organograma" class="content">
+    <ul>
+      <li><a href="FLUXOGRAMA%20DO%20PROCESSO.pdf" target="_blank">Fluxograma do Processo</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
