@@ -2,13 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>SGQ - Documentos</title>
+  <title>Mastercorp – Sistema de Gestão da Qualidade</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 20px;
-      background: #f9f9f9;
     }
     header {
       display: flex;
@@ -16,102 +16,104 @@
       margin-bottom: 30px;
     }
     header img {
-      height: 60px;
+      height: 70px;
       margin-right: 20px;
     }
     h1 {
-      font-size: 24px;
+      font-size: 28px;
       color: #333;
     }
-    .tabs {
-      display: flex;
-      margin-bottom: 20px;
+    h2 {
+      font-size: 22px;
+      color: #005a9c;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
     }
-    .tab {
-      padding: 10px 20px;
-      background: #ddd;
-      border-radius: 5px 5px 0 0;
-      margin-right: 5px;
-      cursor: pointer;
-    }
-    .tab.active {
-      background: #fff;
-      font-weight: bold;
-      border-bottom: 2px solid #fff;
-    }
-    .content {
-      display: none;
+    section {
       background: #fff;
       padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
       border: 1px solid #ccc;
-      border-top: none;
-      border-radius: 0 0 5px 5px;
+      text-align: left;
     }
-    .content.active {
-      display: block;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 10px;
+    th {
+      background: #e8f0fe;
     }
     a {
-      text-decoration: none;
       color: #0066cc;
+      text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
+    }
+    .welcome {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #444;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo SGQ">
-    <h1>Documentos do Sistema de Gestão da Qualidade</h1>
+    <img src="logo.png.jpeg" alt="Logo da Mastercorp">
+    <h1>Bem-vindo à Mastercorp – Sistema de Gestão da Qualidade</h1>
   </header>
 
-  <div class="tabs">
-    <div class="tab active" onclick="showTab('procedimentos')">📘 Procedimentos</div>
-    <div class="tab" onclick="showTab('manual')">📗 Manual da Qualidade</div>
-    <div class="tab" onclick="showTab('instrucoes')">📙 Instruções de Trabalho</div>
-    <div class="tab" onclick="showTab('organograma')">📊 Organograma</div>
-  </div>
+  <p class="welcome">
+    Esta página apresenta os documentos oficiais do SGQ da Mastercorp, organizados por categoria. Ela foi desenvolvida para facilitar o acesso durante auditorias, revisões internas e consultas técnicas.
+  </p>
 
-  <div id="procedimentos" class="content active">
-    <ul>
-      <li><a href="POP-01 Recebimento de matérias primas e insumos e armazenamento rev.04.pdf" target="_blank">POP-01 Recebimento de matérias primas</a></li>
-      <li><a href="POP-03 Controle de Qualidade Revisão 04.pdf" target="_blank">POP-03 Controle de Qualidade</a></li>
-      <li><a href="POP-04 Reclamação de clientes e devolução de produtos Rev.06.pdf" target="_blank">POP-04 Reclamação de clientes</a></li>
-      <li><a href="POP-05 Controle de pragas e potabilidade da água Rev.05.pdf" target="_blank">POP-05 Controle de pragas</a></li>
-      <li><a href="POP-06 Controle de documentos e registros Rev.05.pdf" target="_blank">POP-06 Controle de documentos</a></li>
-      <li><a href="POP-07 Manutenção corretiva e preventiva rev.07.pdf" target="_blank">POP-07 Manutenção preventiva</a></li>
-      <!-- Continue com os demais POPs -->
-    </ul>
-  </div>
+  <section>
+    <h2>📘 Procedimentos</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Título</th><th>Versão</th><th>Documento</th></tr></thead>
+      <tbody>
+        <tr><td>POP-01</td><td>Recebimento de matérias primas</td><td>Rev.04</td><td><a href="POP-01 Recebimento de matérias primas e insumos e armazenamento rev.04.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-03</td><td>Controle de Qualidade</td><td>Rev.04</td><td><a href="POP-03 Controle de Qualidade Revisão 04.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-04</td><td>Reclamação de clientes</td><td>Rev.06</td><td><a href="POP-04 Reclamação de clientes e devolução de produtos Rev.06.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-05</td><td>Controle de pragas</td><td>Rev.05</td><td><a href="POP-05 Controle de pragas e potabilidade da água Rev.05.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-06</td><td>Controle de documentos</td><td>Rev.05</td><td><a href="POP-06 Controle de documentos e registros Rev.05.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-07</td><td>Manutenção preventiva</td><td>Rev.07</td><td><a href="POP-07 Manutenção corretiva e preventiva rev.07.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-08</td><td>Limpeza de máquinas</td><td>Rev.04</td><td><a href="POP-08 Procedimento de limpeza de máquinas Revisão 04.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-09</td><td>Produto não conforme</td><td>Rev.03</td><td><a href="POP-09 Controle de produto não conforme rev.03.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-10</td><td>Seleção de Fornecedores</td><td>Rev.01</td><td><a href="POP-10 Seleção e qualificação de Fornecedores rev. 01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-11</td><td>Higienização das instalações</td><td>Rev.03</td><td><a href="POP-11 Higienização das instalações, móveis e utensílios. revisão 03.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-12</td><td>Higiene e Saúde dos Colaboradores</td><td>Rev.01</td><td><a href="POP-12 Higiene e Saúde dos Colaboradores rev.01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-13</td><td>Rastreabilidade e Recolhimento</td><td>Rev.01</td><td><a href="POP-13 Rastreabilidade e recolhimento de produtos rev.01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-14</td><td>Gestão de Incidentes</td><td>Rev.01</td><td><a href="POP-14 Gestão de incidentes rev.01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-15</td><td>Calibração de Equipamentos</td><td>Rev.01</td><td><a href="POP-15 Manutenção e Calibração de Equipamentos de Medição Revisão 01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-16</td><td>Materiais Estranhos</td><td>Rev.01</td><td><a href="POP-16 Gestão de materiais estranhos rev.01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-17</td><td>Gestão de Resíduos</td><td>Rev.00</td><td><a href="POP-17 Gestão de Resíduos Rev.00.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-18</td><td>Controle de Alergênicos</td><td>Rev.00</td><td><a href="POP-18 Controle de alergênicos rev.00.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-24</td><td>Estoque e Expedição</td><td>Rev.01</td><td><a href="POP-24 Estoque e expedição de produto acabado rev.01.pdf" target="_blank">Ver PDF</a></td></tr>
+        <tr><td>POP-25</td><td>Recebimento de CTNR</td><td>Rev.01</td><td><a href="POP-25 Recebimento e verificação de CTNR rev.01.docx.pdf" target="_blank">Ver PDF</a></td></tr>
+      </tbody>
+    </table>
+  </section>
 
-  <div id="manual" class="content">
-    <ul>
-      <li><a href="SGQ-MQ-001 Manual da Qualidade.pdf" target="_blank">SGQ-MQ-001 Manual da Qualidade</a></li>
-    </ul>
-  </div>
+  <section>
+    <h2>📗 Manual da Qualidade</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Título</th><th>Versão</th><th>Documento</th></tr></thead>
+      <tbody>
+        <tr><td>SGQ-MQ-001</td><td>Manual da Qualidade</td><td>3.0</td><td><a href="SGQ-MQ-001 Manual da Qualidade.pdf" target="_blank">Ver PDF</a></td></tr>
+      </tbody>
+    </table>
+  </section>
 
-  <div id="instrucoes" class="content">
-    <ul>
-      <li><a href="PL 01 - APPCC -Análise de Perigos e Pontos Críticos de Controle Rev. 02.pdf" target="_blank">PL 01 - APPCC</a></li>
-      <li><a href="POP-26 Laudo de Migração Rev. 00.pdf" target="_blank">POP-26 Laudo de Migração</a></li>
-    </ul>
-  </div>
-
-  <div id="organograma" class="content">
-    <ul>
-      <li><a href="FLUXOGRAMA DO PROCESSO.pdf" target="_blank">Fluxograma do Processo</a></li>
-    </ul>
-  </div>
-
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.querySelectorAll('.content').
+  <section>
+    <h2>📙 Instruções de Trabalho</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Título</th><th>Versão
